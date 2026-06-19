@@ -1,4 +1,3 @@
-```yaml
    name: publish
    on:
      push:
