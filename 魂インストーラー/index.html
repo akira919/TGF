@@ -1,0 +1,4632 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An optimized digital archive and reading space.">
+      
+      
+        <meta name="author" content="akira919">
+      
+      
+      
+        <link rel="prev" href="../%E9%AB%94%E8%82%B2%E5%A0%B4%E7%9A%84%E6%95%85%E4%BA%8B%EF%BC%88%E8%87%AA%E7%BF%BB%EF%BC%89/">
+      
+      
+        <link rel="next" href="../%E9%AD%82%E4%B9%8B%E8%A1%93%20%28%E5%85%A8%29/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>魂インストーラー - TGF</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="TGF" class="md-header__button md-logo" aria-label="TGF" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TGF
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              魂インストーラー
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="TGF" class="md-nav__button md-logo" aria-label="TGF" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    TGF
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Table of Contents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Part4%20%E7%AC%AC%E4%BA%8C%E7%BB%93%E5%B1%80%EF%BC%88R18%EF%BC%89%EF%BC%9A%E5%A5%BD%E5%85%84%E5%BC%9F%E5%8F%98%E6%88%90%E4%BA%86%E5%A5%BD%E9%97%BA%E8%9C%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part4 第二结局（R18）：好兄弟变成了好闺蜜
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SW%40P%EF%BC%9A%E5%92%8C%E4%BA%BA%E5%A6%BB%E4%BA%A4%E6%8F%9B%E3%80%88%E4%B8%80%E3%80%89%EF%BD%9E%E3%80%88%E5%85%AD%E3%80%89%E5%AE%8C%E7%B5%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SW@P：和人妻交換〈一〉～〈六〉完結
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Switch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Switch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5B2021%E8%81%96%E8%AA%95%E7%AF%80%5D%20%E8%81%96%E8%AA%95%E7%AF%80%E7%9A%84%E4%B8%AD%E8%97%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [2021聖誕節] 聖誕節的中藥
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5B2022%E5%9C%A3%E8%AF%9E%E8%8A%82%5D%20%5B%E7%BF%BB%E8%AF%91%5D%20%E5%B9%BC%E9%A6%B4%E6%9F%93%E3%81%AE%E6%AF%8D%E8%A6%AA%E3%81%A8%E8%BA%AB%E4%BD%93%E3%81%8C%E5%85%A5%E3%82%8C%E6%9B%BF%E3%82%8F%E3%81%A3%E3%81%A6%E3%81%97%E3%81%BE%E3%81%A3%E3%81%9F%E4%BB%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [2022圣诞节] [翻译] 幼馴染の母親と身体が入れ替わってしまった件
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5B2022%E8%81%96%E8%AA%95%E7%AF%80%5D%20%E8%81%96%E8%AA%95%E7%AF%80%E7%9A%84%E9%98%B2%E7%96%AB%E4%B8%AD%E8%97%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [2022聖誕節] 聖誕節的防疫中藥
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5B2022%E8%81%96%E8%AA%95%E7%AF%80%5D%5B%E6%94%B9%E7%B7%A8%5D%20Replacement%20Bride%EF%BC%88%E6%9B%BF%E8%A3%9C%E6%96%B0%E5%A8%98%EF%BC%89%E7%95%AA%E5%A4%96%E7%AF%87/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [2022聖誕節][改編] Replacement Bride（替補新娘）番外篇
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5B2022%E8%81%96%E8%AA%95%E7%AF%80%5D%5B%E7%BF%BB%E8%AD%AF_%E6%94%B9%E7%B7%A8%5D%20Replacement%20Bride%EF%BC%88%E6%9B%BF%E8%A3%9C%E6%96%B0%E5%A8%98%EF%BC%89%EF%BC%88%E9%87%8D%E6%A0%A1%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [2022聖誕節][翻譯 改編] Replacement Bride（替補新娘）（重校）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5B%E5%8E%9F%E5%89%B5%5D%E6%AC%B2%E6%9C%9B%E5%95%86%E5%BA%97%E4%B9%8B%E6%95%B8%E7%A2%BC%E7%9B%B8%E6%A9%9F%EF%BC%88%E4%B8%80%E8%87%B3%E5%8D%81%E4%BA%8C%EF%BC%8C%E5%85%A8%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [原創]欲望商店之數碼相機（一至十二，全）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5B%E5%8E%9F%E5%89%B5%5D%E9%87%91%E8%89%B2%E9%8A%80%E6%B0%B4%E6%99%B6%EF%BC%881-26%E5%85%A8%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [原創]金色銀水晶（1 26全）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../untitled_135/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Untitled 135
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E4%B8%9D%E8%A2%9C%E7%9A%84%E6%96%B0%E4%BA%BA%E7%94%9F%E3%80%8B%E7%95%AA%E5%A4%96%E7%AF%87.%28%E5%90%B3%E6%BE%A4%E7%94%B7%E8%AD%A6%E5%AE%98%E7%AF%87%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    《丝袜的新人生》番外篇.(吳澤男警官篇)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8A%E6%88%80%E7%9A%AE%E3%80%8B%E7%AC%AC1%E8%A9%B1%5B%E8%90%8C%E7%94%9F%5D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9.《戀皮》第1話[萌生]
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8C%E9%9A%A8%E3%80%81%E5%BF%83%E3%80%81%E6%89%80%E3%80%81%E6%85%BE%E3%80%8D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    「隨、心、所、慾」
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%8ETS%E9%9B%9C%E8%B2%A8%E5%BA%97%E3%80%8F%EF%BD%9E%E5%85%A7%E6%9C%8D%E8%97%A5%EF%BD%9E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    47. 『TS雜貨店』～內服藥～
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E5%A5%87%E4%BA%8B%E3%80%91/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【奇事】
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E7%9A%AE%E7%89%A9%E3%80%91%E7%A9%BA%E4%B8%AD%E5%A5%87%E7%BC%98%EF%BC%9A%E5%AF%86%E6%A1%83%E8%A7%86%E8%A7%92/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【皮物】空中奇缘：密桃视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E7%9A%AE%E7%89%A9%E3%80%91%E7%A9%BA%E4%B8%AD%E5%A5%87%E7%BC%98%EF%BC%9A%E6%AC%A3%E6%9F%94%E8%A6%96%E8%A7%92/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【皮物】空中奇缘：欣柔視角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E3%80%90%E9%99%84%E8%BA%AB%E3%80%91%E4%BD%9C%E8%80%85%E7%9A%84%E7%9C%9F%E5%AF%A6%E8%BA%AB%E4%BB%BD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【附身】作者的真實身份
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%B8%89%E5%80%8B%E9%A1%98%E6%9C%9B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15.三個願望
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%B8%8D%E6%AD%BB%E4%B9%8B%E6%9B%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    19.不死之書
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%B8%8D%E6%AD%BB%E4%B9%8B%E6%9B%B8_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    不死之書
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%B9%BE%E5%9D%A4%E5%A4%A7%E6%8C%AA%E7%A7%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    乾坤大挪移
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%B9%BE%E5%9D%A4%E6%8C%AA%E7%A7%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    乾坤挪移
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BA%A4%E5%8F%89%E4%BA%92%E6%8D%A2%E7%9A%84%E5%9B%9B%E4%BA%BA%20%E3%80%90%E4%BA%8C%E3%80%91/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    交叉互换的四人 【二】
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BA%A4%E5%8F%89%E4%BA%92%E6%8D%A2%E7%9A%84%E5%9B%9B%E4%BA%BA%E3%80%90%E4%B8%80%E3%80%91/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    交叉互换的四人【一】
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BA%BA%E4%BD%93%E5%BD%B1%E5%8D%B0%E6%9C%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    人体影印机
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BA%BA%E7%9A%AE%E7%9B%B8%E6%A9%9F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9.人皮相機
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BA%BA%E7%9A%AE%E7%9B%B8%E6%A9%9F_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    人皮相機
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BA%BA%E7%9A%AE%E7%9B%B8%E6%A9%9F_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    人皮相機 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BD%9C%E8%80%85%E7%9A%84%E7%9C%9F%E5%AF%A6%E8%BA%AB%E4%BB%BD%20%E7%AC%AC%E4%BA%8C%E7%AB%A0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    作者的真實身份 第二章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%85%A5%E6%9B%BF%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    入替数码相机
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%85%A5%E6%9B%BF%E7%9A%AE%E6%9D%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    入替皮杖
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%87%BA%E7%AB%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    出竅
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%89%9D%E7%9A%AE%E4%B9%8B%E5%88%831~4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    剝皮之刃1~4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%89%A5%E7%9A%AE%E4%B9%8B%E5%88%835~10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    剥皮之刃5~10
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8D%8A%E9%AD%82%E3%81%AE%E8%A1%93%EF%BC%81%E2%80%95%E6%8C%89%E6%91%A9%E7%B7%A8%E2%80%95%EF%BC%88%E4%BF%AE%E9%A3%BE%E7%89%88%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    半魂の術！―按摩編―（修飾版）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8D%8A%E9%AD%82%E3%81%AE%E8%A1%93%EF%BC%81%E9%86%AB%E9%99%A2%E7%B7%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    半魂の術！醫院編
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8E%9F%E6%9D%A5%E5%A4%A9%E5%A0%82%E7%9A%84%E5%B0%BD%E5%A4%B4%E6%98%AF%E4%B8%80%E6%9C%9B%E6%97%A0%E9%99%85%E7%9A%84%E9%BB%91%E6%9A%971-6%E7%AB%A0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    原来天堂的尽头是一望无际的黑暗1 6章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8E%9F%E6%9D%A5%E5%A4%A9%E5%A0%82%E7%9A%84%E5%B0%BD%E5%A4%B4%E6%98%AF%E4%B8%80%E6%9C%9B%E6%97%A0%E9%99%85%E7%9A%84%E9%BB%91%E6%9A%97%EF%BC%88%E7%AC%AC%E4%B8%83%E7%AB%A0%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    原来天堂的尽头是一望无际的黑暗（第七章）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%98%E6%95%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    变故
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%90%88%E5%BD%B1%E7%9B%B8%E6%9C%BA%201-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    合影相机 1 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%90%88%E5%BD%B1%E7%9B%B8%E6%9C%BA%205-7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    合影相机 5 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%90%88%E5%BD%B1%E7%9B%B8%E6%9C%BA%208-13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    合影相机 8 13
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%90%B8%E8%A1%80%E9%AC%BC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    吸血鬼
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%90%B9%E5%85%A5%E9%9D%88%E9%AD%82%E5%90%A7%EF%BC%81%20%28%E8%87%AA%E7%BF%BB%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    吹入靈魂吧！ (自翻)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%A5%B3%E8%80%81%E5%B8%AB%E7%9A%84%E6%BB%8B%E5%91%B3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    女老師的滋味
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%A5%B6%E6%B2%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    奶油
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%A5%B9%E7%9A%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    她的
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%A6%96%E5%81%B6%E7%9B%B8%E6%9C%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    妖偶相机
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%BE%97%E5%88%B0%E5%88%B6%E6%9C%8D%E5%B0%91%E5%A5%B3%E7%9A%84%E6%96%B9%E6%B3%95/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    得到制服少女的方法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%80%AA%E7%95%B0%E8%83%BD%E5%8A%9B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    怪異能力
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%83%A1%E9%AD%94%E4%B9%8B%E9%99%84%E8%BA%AB%E8%A1%93/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11.惡魔之附身術
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%84%8F%E5%A4%96%E4%BA%8B%E4%BB%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    意外事件
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%84%8F%E5%A4%96%E4%BA%8B%E4%BB%B6_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    意外事件
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%84%8F%E5%A4%96%E7%9A%84%E4%BA%A4%E6%8F%9B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.意外的交換
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%85%BE%E6%9C%9B%E5%95%86%E5%BA%97%E2%88%92%E9%A3%B2%E6%96%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    慾望商店−飲料
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%85%BE%E6%9C%9B%E5%95%86%E5%BA%97%E4%B9%8B%E6%85%BE%E5%BF%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    慾望商店之慾念
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%85%BE%E6%9C%9B%E5%95%86%E5%BA%97%E4%B9%8B%E7%A7%BB%E9%AD%82%E5%99%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    慾望商店之移魂器
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%88%91%E5%92%8C%E5%A6%88%E5%A6%88%E7%9A%84%E6%B8%B8%E6%88%8F%EF%BC%88%E5%BA%8F%EF%BC%89%EF%BC%8B%EF%BC%88%E4%B8%80%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    我和妈妈的游戏（序）＋（一）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%8D%A2%E9%AD%82%E8%AE%B0%E4%B9%8B%E4%BA%BA%E5%A6%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    换魂记之人妻
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%8F%9B%E8%BA%AB%E8%B6%85%E8%83%BD%E5%8A%9B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    換身超能力
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%99%93%E7%A3%8A%E7%89%88%E6%9C%AC%E7%9A%84%E2%88%92%E4%B9%BE%E5%9D%A4%E5%A4%A7%E6%8C%AA%E7%A7%BB1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    晓磊版本的−乾坤大挪移1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%8D%8E%E5%93%81%E7%8E%A9%E5%85%B7%E6%A7%8D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    獎品玩具槍
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%90%89%E7%92%83%E9%AD%82%E7%8E%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    琉璃魂玉
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%90%89%E7%92%83%E9%AD%82%E7%8E%89%EF%BC%88%E4%B8%89%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    琉璃魂玉（三）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%90%89%E7%92%83%E9%AD%82%E7%8E%89%EF%BC%88%E4%BA%8C%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    琉璃魂玉（二）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%94%A8%E4%BD%99%E7%94%9F%E5%8E%BB%E6%8A%A5%E7%AD%94%E4%BD%A0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    用余生去报答你
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%95%AB%E7%9A%AE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    21.畫皮
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%95%B0%E8%AE%8A/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    異變
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%9A%AE%E4%B9%8B%E5%88%801/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    皮之刀1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%9A%AE%E4%B9%8B%E6%88%921~4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    皮之戒1~4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%9A%AE%E5%B8%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    皮师
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%9A%AE%E9%9E%AD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    皮鞭
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A5%9E%E5%A5%87%E5%8F%A3%E9%A6%99%E7%B3%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.神奇口香糖
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A5%9E%E5%A5%87%E7%95%AB%E5%85%B7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.神奇畫具
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A5%9E%E5%A5%87%E7%9A%84%E8%9A%8A%E5%AD%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    神奇的蚊子
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A5%9E%E5%A5%87%E7%9A%84%E8%A1%9B%E7%94%9F%E5%B7%BE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    神奇的衛生巾
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A5%9E%E5%A5%87%E8%86%A0%E5%9B%8A1~3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    神奇膠囊1~3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A5%9E%E5%A5%87%E8%A4%B2%E8%A2%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    神奇褲袜
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A5%9E%E5%A5%87%E9%81%99%E6%8E%A7%E5%99%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11.神奇遙控器
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A5%9E%E7%A5%95%E7%9B%92%E5%AD%90%E4%B8%AD%E4%B8%8A%E5%8E%9F%E5%89%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    神祕盒子中上原創
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A5%9E%E7%A7%98%E7%9A%84%E6%BA%AB%E6%B3%89%E4%B9%8B%E6%97%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10.神秘的溫泉之旅
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A5%9E%E7%A7%98%E7%9B%92%E5%AD%90%28%E4%B8%8A%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    40.
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A6%BB%E9%AD%82%E8%8D%AF%E4%B8%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    离魂药丸
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A7%81%E5%AF%86%E6%94%9D%E5%BD%B1%E4%B9%8B%E5%85%A5%E9%AD%82%20%28%E5%81%A5%E9%9B%84%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    私密攝影之入魂 (健雄的第一次)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A7%81%E5%AF%86%E6%94%9D%E5%BD%B1%E4%B9%8B%E5%85%A5%E9%AD%82%20%28%E5%B0%8F%E8%92%A8%E7%9A%84%E8%BA%AB%E9%AB%94%29%20%E7%AC%AC%E4%B9%9D%E7%AB%A0%20%E8%81%96%E8%AA%95%E5%BF%AB%E6%A8%82%21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    私密攝影之入魂 (小蒨的身體) 第九章 聖誕快樂!
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A7%81%E5%AF%86%E6%94%9D%E5%BD%B1%E4%B9%8B%E5%85%A5%E9%AD%82%20%28%E5%B8%AB%E7%94%9F%E7%9A%84%E4%BA%92%E5%8B%95%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    私密攝影之入魂 (師生的互動)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A7%81%E5%AF%86%E6%94%9D%E5%BD%B1%E4%B9%8B%E5%85%A5%E9%AD%82%28%E9%95%B7%E9%80%94%E5%85%AC%E8%BB%8A%E5%A5%87%E9%81%87%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    私密攝影之入魂(長途公車奇遇)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A7%81%E5%AF%86%E6%94%9D%E5%BD%B1%E4%B9%8B%E5%85%A5%E9%AD%822.%28%E5%A4%A2%E4%B8%AD%E8%89%B7%E9%81%87%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    私密攝影之入魂2.(夢中艷遇)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A7%BB%E9%AD%82%E4%B9%8B%E6%9B%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    移魂之書
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A7%BB%E9%AD%82%E5%92%92%20%28%E6%95%99%E5%B8%ABVS%E5%AD%B8%E7%94%9F%29%20%E5%89%8D%E7%AF%87/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    移魂咒 (教師VS學生) 前篇
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A7%BB%E9%AD%82%E5%92%92%EF%BC%88%E5%95%A6%E5%95%A6%E9%9A%8A%E7%AF%87%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    移魂咒（啦啦隊篇）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A7%BB%E9%AD%82%E6%89%8B%E6%9C%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    移魂手机
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A7%BB%E9%AD%82%E8%BD%89%E5%87%BA%E5%B8%BD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    移魂轉出帽
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%A7%BB%E9%AD%82%E9%9B%BB%E8%A9%B1%E7%B9%A9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12.
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E5%85%AC%E5%8F%B8%E7%9A%84%E9%9D%9E%E6%97%A5%E5%B8%B8%EF%BC%88%E4%B8%8B%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第三章 公司的非日常（下）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%B2%89%E6%9C%AB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    粉末
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%81%96%E8%AA%95%E5%92%92%20%28%E5%B9%B3%E5%AE%89%E5%A4%9C%E7%AF%87%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    聖誕咒 (平安夜篇)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%81%96%E8%AA%95%E8%81%9A%E6%9C%83/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    聖誕聚會
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%82%89%E4%BD%93%E3%81%AF%E5%BD%B9%E3%80%81%E7%B2%BE%E7%A5%9E%E3%81%AF%E6%BC%94%E8%80%85%E3%81%AA%E5%85%A5%E3%82%8C%E6%9B%BF%E3%82%8F%E3%82%8A%E3%81%AE%E8%A9%B1%EF%BC%88%E4%BA%BA%E7%94%9F%E6%89%AE%E6%BC%94%E4%B9%8B%E8%AF%9D%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    肉体は役、精神は演者な入れ替わりの話（人生扮演之话）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%83%BD%E5%B9%B9%E7%9A%84%E6%9C%8B%E5%8F%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    能幹的朋友
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%84%91%E6%B3%A2%E6%94%B6%E5%8F%91%E5%99%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    脑波收发器
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%88%AA%E7%8F%AD%E4%B8%8A%E7%9A%84%E8%BD%89%E8%AE%8A/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    航班上的轉變
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%8E%B7%E5%BE%97%E5%88%86%E9%AD%82APP%E7%9A%84%E6%8C%87%E6%8C%A5%E5%AE%98%E9%99%84%E8%BA%AB%E8%88%B0%E5%A8%98%E4%B8%BA%E6%89%80%E6%AC%B2%E4%B8%BA%EF%BC%88%E7%B3%BB%E5%88%97%E6%96%87%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    获得分魂APP的指挥官附身舰娘为所欲为（系列文）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%93%9D%E6%99%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    蓝晶
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%A1%80%E9%AD%82%E7%A6%81%E5%92%92%E2%80%94%E2%80%94%E6%B0%B4%E4%B8%AD%E6%9C%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13.血魂禁咒——水中月
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%A2%AB%E5%82%AC%E7%9C%A0%E7%9A%84%E5%B0%91%E5%A5%B3%E5%B0%8F%E6%9F%94/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.被催眠的少女小柔
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AD%A6%E5%8C%AA%E5%BC%82%E4%BA%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    警匪异事
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AE%80%E8%A1%80%E8%80%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    讀血者
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AE%8A%E8%BA%AB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    20.變身
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AE%8A%E8%BA%AB%E2%80%94%E2%80%94%E5%A5%B9%E7%9A%84%E9%A0%AD%E7%99%BC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    18.變身——她的頭發
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AE%8A%E8%BA%AB%E5%8F%A3%E9%A6%99%E7%B3%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%AE%8A%E8%BA%AB%E5%A5%B3%E8%AD%A6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    變身女警
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%BA%AB%E9%AB%94%E6%9C%8D%E5%8B%99%E4%B8%AD%E5%BF%83/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    身體服務中心
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%BD%BB%E7%8E%87%E5%9C%B0%E4%BA%A4%E6%8D%A2%E8%BA%AB%E4%BD%93%E7%9A%84%E4%B8%96%E7%95%8C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    轻率地交换身体的世界
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%80%B2%E5%8C%96%28%E7%AC%AC%E4%B8%80%E9%83%A8%E5%85%A8%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    進化(第一部全)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%87%8D%E7%94%9F%E4%B9%8B%E6%88%91%E6%98%AF%E6%88%91%E5%A6%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    重生之我是我妈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E8%BA%AB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附身
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E8%BA%AB%E4%B9%8B%E5%A5%B3%E5%AD%90%E9%AB%98%E4%B8%AD%E7%94%9F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E8%BA%AB%E4%BA%8B%E8%BF%B9%EF%BC%9A%E8%A2%AB%E5%BC%80%E9%99%A4%E7%9A%84%E5%91%98%E5%B7%A5%E7%9A%84%E5%A4%8D%E4%BB%87%E8%AE%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附身事迹：被开除的员工的复仇记
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E8%BA%AB%E7%BE%8E%E5%A5%B3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附身美女
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E8%BA%AB%E8%83%BD%E5%8A%9B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附身能力
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%88%E5%AE%87%E3%81%AE%E7%A5%9E%E5%A5%87%E6%88%92%E6%8C%87%20%232/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    陈宇の神奇戒指 #2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%88%E5%AE%87%E3%81%AE%E7%A5%9E%E5%A5%87%E6%88%92%E6%8C%87%20%233/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    陈宇の神奇戒指 #3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%88%E5%AE%87%E3%81%AE%E7%A5%9E%E5%A5%87%E6%88%92%E6%8C%87/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    陈宇の神奇戒指
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%B0%E9%99%BD%E9%97%96%E6%B1%9F%E6%B9%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    陰陽闖江湖
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%9B%99%E7%A5%9E%E7%9A%84%E4%BB%A3%E7%90%86%E4%BA%BA%EF%BC%881~11%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    雙神的代理人（1~11）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%9B%A2%E9%AD%82%E5%B8%BD-%E7%AC%AC%E4%B8%80%E7%AB%A0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    離魂帽 第一章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%9B%A2%E9%AD%82%E8%97%A5%E4%B8%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    離魂藥丸
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%9D%88%E7%B5%A11%E2%88%925/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12.靈絡1−5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%9D%88%E9%AD%82%E4%B9%8B%E6%9B%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    靈魂之書
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%9D%88%E9%AD%82%E4%B9%8B%E7%90%83/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    靈魂之球
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%9D%88%E9%AD%82%E7%AE%A1%E7%90%86%E5%99%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. 靈魂管理器
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%9D%88%E9%AD%82%E7%AE%A1%E7%90%86%E5%99%A82%E5%9E%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    靈魂管理器2型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%9D%88%E9%AD%82%E8%AB%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    靈魂論
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%A0%85%E9%8D%8A%E3%81%AE%E9%AD%82/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    項鍊の魂
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%A3%9E%E5%A4%A9%E4%B8%83%E8%99%8E/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    飞天七虎
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%AB%94%E8%82%B2%E5%A0%B4%E7%9A%84%E6%95%85%E4%BA%8B%EF%BC%88%E8%87%AA%E7%BF%BB%EF%BC%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    體育場的故事（自翻）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    魂インストーラー
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%AD%82%E4%B9%8B%E8%A1%93%20%28%E5%85%A8%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    魂之術 (全)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%AD%82%E4%B9%8B%E8%A1%93/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    魂之術
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%AD%82%E6%9E%AA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    魂枪
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%AD%94%E5%BD%A2%E4%BA%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    魔形人
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%AD%94%E6%88%92%20%E4%BA%A4%E6%8F%9B%E7%9A%84%E6%84%9F%E8%A6%BA01%E8%87%B308/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    魔戒 交換的感覺01至08
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%AD%94%E6%88%92/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    魔戒
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%AD%94%E7%9A%AE%281-11%E7%AB%A0%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    魔皮(1 11章)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%AD%94%E7%9A%AE%281-5%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    魔皮(1-5)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%AD%94%E8%86%9A/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    魔膚
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%BB%91%E8%89%B2%E7%B3%BB%E7%A6%AE%E7%89%A9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    黑色系禮物
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1"></h1>
+<p>「啊啊，哈，要，要去了—！</p>
+<p>」 跨坐在一个横躺着的、头上戴着像是拳击手头盔的装置的全裸男性身上，以骑乘位激烈地让腰部上下抽动，让肉棒在自己的小穴里抽插的女性，在迎来了高潮以
+后，无力地倒在了男性的胸口上。</p>
+<p>「哎呀，难道说是真的吗，这个灵魂安装程序…」 一边说着一边站起来的女性，下流地用手抚摸着屁股，同时把丢在床上的脱下的衣服穿回身上。</p>
+<p>在床上横躺着的男性…是我，山浦勇治，一个大学生。</p>
+<p>在某一个电器街的小巷里找到的一间奇妙的店，得到了这个像是拳击手头盔一样的「灵魂安装程序」。</p>
+<p>店主老人说，这个灵魂安装程序是，只要Wi-Fi和手机电波能到达的范围里的人，都能把这个装置里装载着的人的灵魂送进其身体，得到其支配权的物品。</p>
+<p>由于仍然是试作品，因此半信半疑地得以以十分便宜的价格买到的我，回到家里以后立即就装上了这个装置。</p>
+<p>躺在床上的我，把装置上延伸出来的传感器贴到了太阳穴上，放下了眼罩。</p>
+<p>视线一片黑暗。</p>
+<p>然后我插入了电源。</p>
+<p>似乎有着能把映像直接送到眼前的装置，眼睛上映出了直接启动的画面，之后，可以见到一个指示自己现在所在位置的地图，以及一个半透明的指令窗口。</p>
+<p>「好厉害…！</p>
+<p>」 我咕噜一声吞下了口水。</p>
+<p>地图中心的光标上有着一个人形的图标，「山浦勇治」以及，姓名和性别，面部照片都显示在标签上。</p>
+<p>似乎是脑波操作的样子，往命令窗口送出一个「广域」的意识后，地图的比例尺改变，让我能看到公寓外，而且有了移动的行人的图标。</p>
+<p>移动到一些光标上一看，发现和见到我自己的图标时一样，标签上有着名字，性别以及面部照片。</p>
+<p>光标移动到了其中一个标签上，用意识点击了一下，标签就扩展开来，显示出那个人详细的资料，同时另外显示了一个窗口「是否往此目标上安装灵魂？</p>
+<p>是/否」 我连资料都没有读就选择了「是」。</p>
+<p>视野立即变得一片空白，当再次能看见东西时，我看见自己就站在公寓前的道路上。</p>
+<p>往下一看，见到自己穿着灰色的西装以及黑色的皮鞋。</p>
+<p>手是稍微有些皱纹的手。</p>
+<p>「真的吗！</p>
+<p>…啊，声音…」 从口中发出的声音也与自己所拥有的不同。</p>
+<p>慌张地看向道路边的转弯镜上，能看见一个不认识的大叔正以不可思议的眼神看着自己。</p>
+<p>「你是谁啊…我，很讨厌这样的大叔啊！</p>
+<p>」 我不由得大声说道。</p>
+<p>路上的行人，远远的盯着这个看着转弯镜大喊的大叔。</p>
+<p>（真是讨厌啊…！</p>
+<p>） 我这样想着，视野中再次出现了半透明的视窗。</p>
+<p>在那些命令中，我用意识点击了「卸载」的选项。</p>
+<p>于是，在显示出的「是否从这个目标上卸载灵魂？</p>
+<p>是/否」的窗口中选择了「是」后，我眼前立即就出现了原本的地图的画面。</p>
+<p>「啊—，真讨厌！</p>
+<p>终归是要找一个美女啊！</p>
+<p>」 这样思考着的我，在地图上往自己所在的大学移动了。</p>
+<p>我把地图的比例尺经过了数次的变化，在大学里检索着，然后在食堂里发现了同级生高木亚纪的图标。</p>
+<p>她是和我同年级的学年第一巨乳美女，但是由于班级不同，到现在为止我都没和她说过几句话。</p>
+<p>在学校饭堂里的她的图标对面，是她朋友佐藤留美的图标。</p>
+<p>稍微等待了一会佐藤留美的图标移动了，此时我忍不住往高木亚纪的图标上点击了一下。</p>
+<p>「是否往此目标上安装灵魂？</p>
+<p>是/否」的窗口显示了出来，我毫不犹豫地点击了「是」。</p>
+<p>忽然视野里再次一片空白，当我能看见东西的时候，发现自己已经坐在了食堂的座位上。</p>
+<p>眼前的是佐藤留美。</p>
+<p>「…呢—！</p>
+<p>」 在高木亚纪与佐藤留美的对话途中我进入了她的身体，她似乎在说什么要征得我的同意。</p>
+<p>「诶…啊，啊啊，是呢…」 （啊…声，声音是女人的…是高木亚纪的声音！</p>
+<p>成功了！</p>
+<p>） 我不太清楚对话的内容，于是我以高木亚纪的声音作出一个较为适合的回答，同时，我低头看去。</p>
+<p>低下头时，可以看见头发遮挡了视线。</p>
+<p>我看向了迷你裙里面，在那里伸出的一双充满诱惑力的长腿，身上穿着的T恤和对襟毛衣仿佛是要突出胸部一样。</p>
+<p>从T恤的领口向里面窥视，可以见到巨大的胸部之间的乳沟。</p>
+<p>（唔哦！</p>
+<p>高木，传说中的巨乳！</p>
+<p>） 「…喂，亚纪！</p>
+<p>？</p>
+<p>别看着自己的胸部了！</p>
+<p>有在听我说话吗？</p>
+<p>」 我正入迷地看着现在已经是自己的东西的高木亚纪的胸部，佐藤留美在说话的途中这样说着。</p>
+<p>「诶…啊啊，在听着…呢…」 我用着高木的声音，以不习惯的女人的语气说道。</p>
+<p>「真是的！</p>
+<p>不是完全没在听吗！</p>
+<p>」 完全没想到在对话途中好友已经完全被别人取代的佐藤留美，对于不答话的亚纪已经有了一丝愤怒的迹象。</p>
+<p>（呜哇，不想被卷入麻烦的事情里，趁现在告辞吧！</p>
+<p>） 「对不起，留美！</p>
+<p>忽然想起有急事，我先走了！</p>
+<p>」 这样说着站起来的我，一边摇晃着巨乳一边快步离开了食堂。</p>
+<p>（呜哇，有点太急了！</p>
+<p>但是高木的巨乳，走路的时候巨乳摇晃得这么厉害！</p>
+<p>…对了！</p>
+<p>在厕所的单间里好好观赏一番吧！</p>
+<p>） 在走廊上止步的我，把手放在了男厕所的门把上。</p>
+<p>（啊！</p>
+<p>现在的我，是女孩子啊，不进入女厕所可不行啊！</p>
+<p>） 我改变了方向，打开了女厕所的门，进入了里面。</p>
+<p>第一次进入女厕所的我心跳得很快，在长长的洗面台的镜子前，有一位看起来像是前辈的女性正在化妆。</p>
+<p>我假装若无其事得站在她的旁边，她似乎没有注意到，仍在继续化妆。</p>
+<p>（呜哇，我溜进了女厕所，堂堂正正地站在女人的旁边而没有被注意到！</p>
+<p>） 我看向了面前的镜子。</p>
+<p>镜子上映照出的当然不是我，而是高木。</p>
+<p>我用右手撩起了自己的头发，镜子里的高木同样撩起了头发，我眨了眨眼间，镜子中的高木也眨了眨眼睛。</p>
+<p>表情也和我想的一样。</p>
+<p>镜子里的高木，依照着我的想法作出了各种各样的表情。</p>
+<p>（呵呵，好好玩…！</p>
+<p>） 我转过头，正在化妆的那位女性，正露出惊讶的表情，看着在镜子前做着奇怪事情的我。</p>
+<p>（不好！</p>
+<p>） 我慌忙装作整理刘海的样子。</p>
+<p>过了一会儿，化妆的女性离开了女厕所后。</p>
+<p>（好了好了，终于没有人来妨碍我了！</p>
+<p>那么…！</p>
+<p>） （锵锵！</p>
+<p>） 我把对襟毛衣左右打开，很有气势地卷起了T恤。</p>
+<p>镜子上映出的是，露出放荡的表情卷起了自己的T恤，看着自己那被胸罩包裹着的巨乳的高木的姿态。</p>
+<p>「唔哦，好厉害！</p>
+<p>」 我不禁用高木的声音大声说道。</p>
+<p>我试着跳起来，即使是被胸罩包着，胸部依然大幅度地晃动着。</p>
+<p>「呜哇，好有趣！</p>
+<p>」 镜子里的高木也，露出津津有味的表情看着这里。</p>
+<p>然后我把胸罩往上拉了起来。</p>
+<p>「唔哦！</p>
+<p>高木的乳头，好漂亮的粉红色…！</p>
+<p>」 我用两手的食指弹了弹高木的乳头。</p>
+<p>「啊嗯…！</p>
+<p>好敏感！</p>
+<p>」 镜子里的高木，一边高兴地用食指戳着自己的乳头，一边喘息着。</p>
+<p>接着我用双手抱起了高木的胸部。</p>
+<p>「真不愧是！</p>
+<p>又巨大又有弹性，完全没有下垂！</p>
+<p>」 镜子里的高木也，用双手高兴地抱着自己的胸部。</p>
+<p>「那么接下来是…」 我慢慢地卷起了迷你裙。</p>
+<p>镜子里的高木浮现出一个妖艳的表情，卷起了自己的迷你裙，露出了纯白色的内裤。</p>
+<p>「那么，里面是…」 我刚刚把手伸到高木的内裤上的时候，女厕所的门忽然被打开了，又是一名不认识的女生走了进来。</p>
+<p>我慌忙整理好衣物，打开了单间的门，进入了其中。</p>
+<p>（在单间里慢慢地…嗯！</p>
+<p>？</p>
+<p>） 在进入单间的瞬间，视线转暗，回到了地图画面。</p>
+<p>（怎，怎么了！</p>
+<p>？</p>
+<p>发生什么事情了？</p>
+<p>） 慌忙看向画面，已经见不到高木的图标了。</p>
+<p>似乎是单间里面，是在Wi-Fi和手机电波圈外的样子。</p>
+<p>（可恶…！</p>
+<p>） 稍微过了一会，地图画面的洗面台旁边，再次出现了高木的图标，从女厕所里出来了。</p>
+<p>接着，看到佐藤留美的图标接近了正站在走廊的高木的图标。</p>
+<p>（嗯？</p>
+<p>马上把高木…对了，还是看看她们在说什么吧…！</p>
+<p>） 我点击了同样站在走廊的水野美树的图标。</p>
+<p>视野里一片空白，再次能看见东西的时候，我已经以拉拉队队长的样子站在走廊了。</p>
+<p>手上正拿着拉拉队入部的传单。</p>
+<p>（…哎呀，难道说我现在正在以拉拉队队长的样子站在大学的走廊里吗！</p>
+<p>好有趣！</p>
+<p>对了对了，这里听不到两人的对话…！</p>
+<p>） 我随意地分发着传单，同时仔细地听着两人的对话。</p>
+<p>「…亚纪！</p>
+<p>忽然把手机和手提包都放在食堂就离开了，到底怎么了！</p>
+<p>是的，手机和手提包！</p>
+<p>」 佐藤留美，把我放在食堂椅子上的手机和手提包都带过来了。</p>
+<p>「…诶？</p>
+<p>我，好像不知不觉就离开了食堂…」 高木露出十分混乱的样子接过了手机和手提包。</p>
+<p>「哈？</p>
+<p>说什么呢！</p>
+<p>不是你突然说「有急事要离开」然后离开了食堂的吗！</p>
+<p>」 高木似乎更加混乱了。</p>
+<p>（哎呀，还是我来收拾一下吧…！</p>
+<p>） 把派传单丢在一边，正在摸着水野的胸部，大腿和屁股的我，听到了这样的话以后，马上就从水野的身体里把自己的灵魂卸载了。</p>
+<p>然后把我自己的灵魂安装在佐藤留美身上。</p>
+<p>取回视线后，眼前的是高木。</p>
+<p>看向身边，拉拉队队长水野正纳闷地四处张望，接着继续派发传单。</p>
+<p>（呵呵呵…水野小姐，真是谢谢你的协助！</p>
+<p>） 然后眼前的高木似乎是听我说了什么。</p>
+<p>「那么就像留美说的那样去医务室吧，留美，一起去吗？</p>
+<p>」 她这样说道。</p>
+<p>（哈！</p>
+<p>？</p>
+<p>医务室？</p>
+<p>刚才佐藤说了什么「到医务室去？</p>
+<p>」这样多余的话啊！</p>
+<p>） 「不要，是开玩笑哟，玩笑！</p>
+<p>像是那样记忆忽然穿越过来的事情是经常发生的！</p>
+<p>别在意别在意」 我装作佐藤的样子说道。</p>
+<p>「诶…那，那种事…」 高木对刚刚由于担心自己，而让自己去医务室，而现在却全部否定的留美稍微有点不释然的感觉，这样说着。</p>
+<p>「真是的！</p>
+<p>纠缠不休啊！</p>
+<p>我也是很忙的！</p>
+<p>无聊的事情就别在意啊！</p>
+<p>」 接着，为了强行地说服她，我把灵魂从佐藤身上卸载，然后安装在高木的身上。</p>
+<p>取回视线后，这次是佐藤在眼前了。</p>
+<p>「医务室就不去了！</p>
+<p>虽然刚才稍微有点在意的样子，但是实际上我，经常遇到这种事，已经完全不在意了！</p>
+<p>那么，手机和手提包谢谢了！</p>
+<p>」 用高木的声音这样说着，留下还在发呆的佐藤，我快步跑走了。</p>
+<p>我迅速地回到了自己的公寓。</p>
+<p>从花盘下拿到藏好的钥匙，我打开了大门，进入其中。</p>
+<p>「我回来了—，还是应该说，我打扰了？</p>
+<p>」 一边说着这样的话一边进入屋子的我，站在了镜子前。</p>
+<p>「呜哇，真的是高木呢…高木在我的房间里…好厉害…嘿嘿…」
+镜子里映照出的是，隔着T恤揉弄着自己的胸部，脸上露出混杂着惊讶与喜悦，正在窥视着自己的高木。</p>
+<p>「嘿嘿…这种画面…好兴奋啊…啊啊…咕…」 镜子里的高木满面通红，呼吸也不自觉地加重了，不断地揉着自己的胸部。</p>
+<p>「啊啊嗯！</p>
+<p>山浦君…喜欢你哟…我真是个坏孩子呢…趁着山浦君睡着的时候拿到钥匙进入房间，然后在随意地自慰着什么的…啊啊嗯！</p>
+<p>」 从T恤上脱掉了胸罩的我，故意隔着T恤揉弄着在T恤上浮现的乳头。</p>
+<p>「高木…真是下流呢…咕，只是乳头而已…哈…女，女人能这么舒服真是太好了…太好了…」 镜子中映照出的高木的那种姿态让我更加兴奋了。</p>
+<p>「我真是下流呢！</p>
+<p>小穴都已经这么湿了！</p>
+<p>我这边已经准备好了哟！</p>
+<p>要快点把山浦君的肉棒插到这里呢！</p>
+<p>」 已经变成全裸的我的本体以及现在全裸的我，在镜子前的床上，对着镜子开始了乳交。</p>
+<p>「呜哇！</p>
+<p>那个高木在为我的肉棒进行乳交哟！</p>
+<p>啊啊！</p>
+<p>好兴奋！</p>
+<p>」 镜子中映出的高木乳交的姿态，我的本体也兴奋起来，马上我的肉棒就勃起了。</p>
+<p>「哈…山浦君的肉棒真是美妙呢！</p>
+<p>如此的！</p>
+<p>…那么，我要来了—！</p>
+<p>」 这样说着的我，跨坐在横躺着的我的本体上，一口气插入了勃起的自己的肉棒。</p>
+<p>「哈唔…这，这是…好舒服…！</p>
+<p>！</p>
+<p>！</p>
+<p>无，无法停止了！</p>
+<p>」 镜子中映照出的高木露出兴奋的表情，专心地做着腰部运动。</p>
+<p>那种姿态让我变得更加兴奋，心情也愉悦起来。</p>
+<p>「啊哈，高，高木…啊啊，哈，要，要去了—！</p>
+<p>」 作为高木到达高潮的我，无力地倒在了男性身上。</p>
+<p>「哎呀，难道是真的吗，这个灵魂安装程序…」
+过了一会，一边用高木的声音说着，一边站起来的我，下流地用手抚摸着屁股，一边把脱到床上的衣服穿回身上。</p>
+<p>「啊，到打工时间了！</p>
+<p>差不多也该恢复原状了！</p>
+<p>」 一边打着呵欠一边离开的我，回到了高木所在的大学的食堂，坐到桌子前，然后从她的身体上卸载灵魂，回到自己的身体。</p>
+<p>「啊—，真有趣！</p>
+<p>这个灵魂安装程序好像还有不同的功能呢，还要做各种各样的尝试啊！</p>
+<p>」 回到原本身体的我出门去打工了。</p>
+<p>完</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
