@@ -1,3 +1,53 @@
-site_name: My Archive
+site_name: TGF
+site_description: An optimized digital archive and reading space.
+site_author: akira919
+
 theme:
   name: material
+  language: zh  # Optimizes the UI elements, search, and typography for Chinese text
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.instant     # Loads pages instantly without reloading the browser
+    - navigation.tracking    # Updates the URL bar as you scroll through headers
+    - navigation.top         # Adds a "Back to top" button when scrolling up
+    - search.suggest         # Shows search suggestions as you type
+    - search.highlight       # Highlights searched terms on the page
+
+# Powerful Markdown Extensions for premium layout and readability
+markdown_extensions:
+  - admonition               # Beautiful color-coded callout/note boxes
+  - def_list
+  - attr_list
+  - md_in_html               # Allows layout grids and custom HTML styling inside Markdown
+  - pymdownx.details         # Collapsible callout blocks (using ??? instead of !!!)
+  - pymdownx.superfences     # Advanced code blocks and nested elements
+  - pymdownx.tabbed:
+      alternate_style: true  # Interactive content tabs
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
