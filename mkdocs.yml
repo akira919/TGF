@@ -1,6 +1,8 @@
 site_name: TGF
+site_url: https://akira919.github.io/TGF/
 site_description: An optimized digital archive and reading space.
 site_author: akira919
+repo_url: https://github.com/akira919/TGF
 
 theme:
   name: material
@@ -30,24 +32,3 @@ theme:
     - navigation.top         # Adds a "Back to top" button when scrolling up
     - search.suggest         # Shows search suggestions as you type
     - search.highlight       # Highlights searched terms on the page
-
-# Powerful Markdown Extensions for premium layout and readability
-markdown_extensions:
-  - admonition               # Beautiful color-coded callout/note boxes
-  - def_list
-  - attr_list
-  - md_in_html               # Allows layout grids and custom HTML styling inside Markdown
-  - pymdownx.details         # Collapsible callout blocks (using ??? instead of !!!)
-  - pymdownx.superfences     # Advanced code blocks and nested elements
-  - pymdownx.tabbed:
-      alternate_style: true  # Interactive content tabs
-  - pymdownx.inlinehilite
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.mark
-  - pymdownx.tilde
